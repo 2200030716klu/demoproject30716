@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JAVASCRIPT demo 25</title>
+        <script>
+           //arrow function defnition
+
+           let sum=(a,b) => a+b
+           document.writeln("Output="+sum(10.5,20.6))
+
+           const add = (a,b) => 
+           document.writeln("Output="+add(10.5,20.6))
+
+           const mul = (a,b) => {
+            let output = a*b
+            return output
+           };
+           document.writeln("Output="+mul(13,14))
+
+           document.writeln("</br>")
+
+           const status = (n) => {
+            if (n%2==0)
+            return true
+            else
+            return false
+           }
+
+           let n=parseInt(prompt()) //static
+           if(status(n))
+           document.writeln(n+" is Even")
+           else
+           document.writeln(n+" is Odd")
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JAVASCRIPT demo 27</title>
+        <script>
+            //declaring an Array using new keywords
+            
+            let arr = new Array() //size is optional
+            const n = parseInt(prompt("Enter Array Size",1))
+
+            alert("Reading Array Elements")
+            
+            for(let i=0;i<n;i++)
+            {
+                arr[i] = parseInt(prompt("Enter Element "+(i+1)))
+            }
+
+            document.writeln("Array Elements</br>")
+
+            for(let element of arr)
+            {
+                document.writeln(element)
+            }
+
+            const course = new Array("AWS","MSWD","PFSD") //constructor
+            document.writeln("</br>"+"Course Array Length :"+course.length+"</br>")
+            document.writeln("Course Array Type :"+typeof course+"</br>")
+
+            document.writeln("Course Array Elements :")
+            for(let c of course)
+            {
+                document.writeln(c)
+            }
+            
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
